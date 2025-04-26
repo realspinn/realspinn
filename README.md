@@ -25,6 +25,12 @@
 - [LinkedIn](https://www.linkedin.com/in/israel-adeleye-a466b5357/)
 - GitHub: [realspinn](https://github.com/realspinn)
 
+## GitHub Stats
+![Realspinn's GitHub stats](https://github-readme-stats.vercel.app/api?username=realspinn&show_icons=true&theme=radical)
+
+## GitHub Streak
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=realspinn&theme=radical)
+
 ---
 
 "Stay consistent. Success will chase you." 
