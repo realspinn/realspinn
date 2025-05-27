@@ -1,9 +1,11 @@
-# Hi, I'm Israel Adeleye 
+# Hey, I'm Israel Adeleye 
 
 ## About Me
 - Aspiring Junior Database Administrator (DBA)
+- SQL Developer
 - Passionate about database design, optimization, and SQL development
 - Focused on mastering MySQL, PostgreSQL, and Microsoft SQL Server
+- IT Enthusiats 
 
 ##  Current Skills
 - SQL (Advanced Queries, Indexing, Stored Procedures, Triggers)
@@ -13,13 +15,16 @@
 
 ## Projects
 - [Spotify Clone Database](https://github.com/realspinn/Spotify-Clone-Database)
-- [BankDB SQL Project (with Index Optimization)](https://github.com/realspinn/BankDB-SQL-Project)
 - [Amazon E-commerce Database](https://github.com/realspinn/Amazon-Ecommerce-Database)
+- [BankDB SQL Project (with Index Optimization)](https://github.com/realspinn/BankDB-SQL-Project)
+- [contoso-sql-analysis] (https://github.com/realspinn/contoso-sql-analysis)
+- [NetflixDB-SQL](https://github.com/realspinn/NetflixDB-SQL)
 
 ## Currently Learning
-- Advanced Indexing Techniques
-- Automation with Stored Procedures and Triggers
-- Database Performance Tuning
+- Python for Automation 
+- ETL Pipeline 
+- SQL-data-warehouse
+- Database Performance Tuning 
 
 ## Let's Connect!
 - [LinkedIn](https://www.linkedin.com/in/israel-adeleye-a466b5357/)
