@@ -17,7 +17,7 @@
 - [Spotify Clone Database](https://github.com/realspinn/Spotify-Clone-Database)
 - [Amazon E-commerce Database](https://github.com/realspinn/Amazon-Ecommerce-Database)
 - [BankDB SQL Project (with Index Optimization)](https://github.com/realspinn/BankDB-SQL-Project)
-- [contoso-sql-analysis] (https://github.com/realspinn/contoso-sql-analysis)
+- [contoso-sql-analysis](https://github.com/realspinn/contoso-sql-analysis)
 - [NetflixDB-SQL](https://github.com/realspinn/NetflixDB-SQL)
 
 ## Currently Learning
