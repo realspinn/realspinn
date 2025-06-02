@@ -1,8 +1,8 @@
 # Hey, I'm Israel Adeleye 
 
 ## About Me
-- Aspiring Junior Database Administrator (DBA)
-- SQL Developer
+- Database Developer
+- Aspiring Database Administrator (DBA)
 - Passionate about database design, optimization, and SQL development
 - Focused on mastering MySQL, PostgreSQL, and Microsoft SQL Server
 - IT Enthusiats 
@@ -38,4 +38,4 @@
 
 ---
 
-"Stay consistent. Success will chase you." 
+"Stay consistent. Success will chase you."  - IAO
