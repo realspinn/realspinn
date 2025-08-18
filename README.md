@@ -1,30 +1,32 @@
-# Hey, I'm Israel Adeleye 
+# Hey, I'm Israel Adeleye  
 
-## About Me
-- Database Developer
-- Aspiring Database Administrator (DBA)
-- Passionate about database design, optimization, and SQL development
-- Focused on mastering MySQL, PostgreSQL, and Microsoft SQL Server
-- IT Enthusiats 
+## About Me  
+- **Cloud Database Infrastructure Engineer** (Database Developer + Infrastructure + Data Engineering concepts)  
+- Aspiring **Database Administrator (DBA)** with a focus on high-performance, production-grade systems  
+- Passionate about **database design, optimization, performance tuning, and scalable architectures**  
+- Building expertise in **cloud platforms (Oracle Cloud, AWS), server deployments, and Linux fundamentals**  
+- Committed to becoming a versatile engineer at the intersection of **databases, cloud, and data engineering**  
 
-##  Current Skills
-- SQL (Advanced Queries, Indexing, Stored Procedures, Triggers)
-- Database Management (MySQL Workbench, pgAdmin, SSMS)
-- Data Cleaning and Analysis
-- Git and GitHub for version control
+## 🛠️ Current Skills  
+- **Databases**: PostgreSQL (advanced schema design, performance optimization), MySQL, Microsoft SQL Server  
+- **SQL**: Complex queries, indexing, stored procedures, triggers, CTEs, subqueries, query optimization  
+- **Database Management Tools**: MySQL Workbench, pgAdmin, SSMS  
+- **Cloud**: Oracle Cloud Infrastructure (certification in progress), AWS Cloud Foundations  
+- **Programming**: Python (data engineering concepts, automation, database interaction)  
+- **Version Control & Deployment**: Git, GitHub, Git Bash, PuTTYgen  
+- **Other Skills**: Data cleaning & analysis, schema documentation, Linux fundamentals  
 
 ## Projects
-- [Spotify Clone Database](https://github.com/realspinn/Spotify-Clone-Database)
-- [Amazon E-commerce Database](https://github.com/realspinn/Amazon-Ecommerce-Database)
 - [BankDB SQL Project (with Index Optimization)](https://github.com/realspinn/BankDB-SQL-Project)
 - [contoso-sql-analysis](https://github.com/realspinn/contoso-sql-analysis)
 - [NetflixDB-SQL](https://github.com/realspinn/NetflixDB-SQL)
+- [sql-data-warehouse-project](https://github.com/realspinn/sql-data-warehouse-project)
 
-## Currently Learning
-- Python for Automation 
-- ETL Pipeline 
-- SQL-data-warehouse
-- Database Performance Tuning 
+## Currently Learning  
+- **Python** for automation, scripting, and database interaction  
+- **ETL Pipelines** (Extract, Transform, Load) for data engineering workflows  
+- **SQL for Data Warehousing** and analytics optimization  
+- **Database Performance Tuning** (query optimization, indexing, execution plans)  
 
 ## Let's Connect!
 - [LinkedIn](https://www.linkedin.com/in/israel-adeleye-a466b5357/)
