@@ -65,22 +65,6 @@
 
 ---
 
-<!-- Optional: Compact, card-style language chips -->
-<details>
-<summary>See language chips</summary>
-
-| Language | Use-case |
-|---|---|
-| Python | ETL, automation, data tooling |
-| PostgreSQL | OLTP/analytics, CTEs, JSONB, GIST/GIN |
-| MySQL | Web apps, replicas |
-| SQL Server | Enterprise workloads |
-| Oracle | Legacy & enterprise systems |
-| Bash/Linux | DevOps scripts, servers |
-
-</details>
-
-
 ## Let's Connect!
 - [LinkedIn](https://www.linkedin.com/in/israel-adeleye-a466b5357/)
 - GitHub: [realspinn](https://github.com/realspinn)
