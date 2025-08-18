@@ -28,7 +28,7 @@
 - **SQL for Data Warehousing** and analytics optimization  
 - **Database Performance Tuning** (query optimization, indexing, execution plans)
   
-## 🧰 Tech & Languages
+## Tech & Languages
 
 <p align="center">
   <!-- Badges: feel free to remove/add -->
