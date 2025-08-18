@@ -7,7 +7,7 @@
 - Building expertise in **cloud platforms (Oracle Cloud, AWS), server deployments, and Linux fundamentals**  
 - Committed to becoming a versatile engineer at the intersection of **databases, cloud, and data engineering**  
 
-## 🛠️ Current Skills  
+## Current Skills  
 - **Databases**: PostgreSQL (advanced schema design, performance optimization), MySQL, Microsoft SQL Server  
 - **SQL**: Complex queries, indexing, stored procedures, triggers, CTEs, subqueries, query optimization  
 - **Database Management Tools**: MySQL Workbench, pgAdmin, SSMS  
