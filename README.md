@@ -2,7 +2,7 @@
 
 ## About Me  
 - **Cloud Database Infrastructure Engineer** (Database Developer + Infrastructure + Data Engineering concepts)  
-- Aspiring **Database Administrator (DBA)** with a focus on high-performance, production-grade systems  
+- **Database Administrator (DBA)** with a focus on high-performance, production-grade systems  
 - Passionate about **database design, optimization, performance tuning, and scalable architectures**  
 - Building expertise in **cloud platforms (Oracle Cloud, AWS), server deployments, and Linux fundamentals**  
 - Committed to becoming a versatile engineer at the intersection of **databases, cloud, and data engineering**  
