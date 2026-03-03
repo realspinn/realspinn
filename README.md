@@ -1,77 +1,27 @@
-# Hey, I'm Israel Adeleye  
+# 💫 About Me:
+I'm a Database Engineer building reliable, high-performance data systems across MySQL, PostgreSQL, and SQL Server in cloud environments. I design production-grade databases, optimize performance bottlenecks, and deploy scalable infrastructure on AWS and GCP. I work with Python and Linux to automate database operations and bridge the gap between traditional database management and modern cloud-native practices. I'm passionate about database internals, constantly learning new technologies, and solving complex data challenges that drive business results.
 
-## About Me  
-- **Cloud Database Infrastructure Engineer** (Database Developer + Infrastructure + Data Engineering concepts)  
-- **Database Administrator (DBA)** with a focus on high-performance, production-grade systems  
-- Passionate about **database design, optimization, performance tuning, and scalable architectures**  
-- Building expertise in **cloud platforms (Oracle Cloud, AWS), server deployments, and Linux fundamentals**  
-- Committed to becoming a versatile engineer at the intersection of **databases, cloud, and data engineering**  
 
-## Current Skills  
-- **Databases**: PostgreSQL (advanced schema design, performance optimization), MySQL, Microsoft SQL Server  
-- **SQL**: Complex queries, indexing, stored procedures, triggers, CTEs, subqueries, query optimization  
-- **Database Management Tools**: MySQL Workbench, pgAdmin, SSMS  
-- **Cloud**: Oracle Cloud Infrastructure (certification in progress), AWS Cloud Foundations  
-- **Programming**: Python (data engineering concepts, automation, database interaction)  
-- **Version Control & Deployment**: Git, GitHub, Git Bash, PuTTYgen  
-- **Other Skills**: Data cleaning & analysis, schema documentation, Linux fundamentals  
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/israel-adeleye-907750381/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:adeleyeisrael400@gmail.com) 
 
-## Projects
-- [BankDB SQL Project (with Index Optimization)](https://github.com/realspinn/BankDB-SQL-Project)
-- [contoso-sql-analysis](https://github.com/realspinn/contoso-sql-analysis)
-- [NetflixDB-SQL](https://github.com/realspinn/NetflixDB-SQL)
-- [sql-data-warehouse-project](https://github.com/realspinn/sql-data-warehouse-project)
+# 💻 Tech Stack:
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Gitee](https://img.shields.io/badge/Gitee-C71D23?style=for-the-badge&logo=gitee&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=realspinn&theme=ambient_gradient&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=realspinn&theme=ambient_gradient&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=realspinn&theme=ambient_gradient&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-## Currently Learning  
-- **Python** for automation, scripting, and database interaction  
-- **ETL Pipelines** (Extract, Transform, Load) for data engineering workflows  
-- **SQL for Data Warehousing** and analytics optimization  
-- **Database Performance Tuning** (query optimization, indexing, execution plans)
-  
-## Tech & Languages
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=realspinn&theme=buefy&no-frame=false&no-bg=true&margin-w=4)
 
-<p align="center">
-  <!-- Badges: feel free to remove/add -->
-  <a href="#"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/SQL-336791?logo=postgresql&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoftsqlserver&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Oracle-F80000?logo=oracle&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" /></a>
-</p>
-
-<!-- Icon Grid (devicon) -->
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="42" alt="Python"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="42" alt="PostgreSQL"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="42" alt="MySQL"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" height="42" alt="SQL Server"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" height="42" alt="Oracle"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="42" alt="Bash"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="42" alt="Linux"/>
-</p>
-
-<!-- Skill Bars (unicode; adjust levels as you like) -->
-<table>
-  <tr><td>PostgreSQL</td><td>███████████░ 90%</td></tr>
-  <tr><td>MySQL</td><td>██████████░░ 85%</td></tr>
-  <tr><td>SQL Server</td><td>█████████░░░ 80%</td></tr>
-  <tr><td>Oracle</td><td>████████░░░░ 70%</td></tr>
-  <tr><td>Python</td><td>████████░░░░ 70%</td></tr>
-  <tr><td>Bash/Linux</td><td>███████░░░░░ 60%</td></tr>
-</table>
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=realspinn&limit=5&theme=bear&combine_all_yearly_contributions=true)
 
 ---
+[![](https://visitcount.itsvg.in/api?id=realspinn&icon=0&color=0)](https://visitcount.itsvg.in)
 
-## Let's Connect!
-- [LinkedIn](https://www.linkedin.com/in/israel-adeleye-a466b5357/)
-- GitHub: [realspinn](https://github.com/realspinn)
-
-## GitHub Stats
-![Realspinn's GitHub stats](https://github-readme-stats.vercel.app/api?username=realspinn&show_icons=true&theme=radical)
-
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 ## GitHub Streak
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=realspinn&theme=radical)
 
