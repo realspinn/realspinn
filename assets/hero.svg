@@ -1,45 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
   <title id="title">Israel Adeleye</title>
-  <desc id="desc">Cloud Database Engineer · SQL safety tooling</desc>
+  <desc id="desc">Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.</desc>
   <defs>
-    <radialGradient id="glow" cx="1120" cy="300" r="620" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#c8173a" stop-opacity="0.55"/>
+    <radialGradient id="glow" cx="1080" cy="380" r="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c8173a" stop-opacity="0.6"/>
       <stop offset="0.45" stop-color="#7a0d24" stop-opacity="0.22"/>
       <stop offset="1" stop-color="#0b0b0d" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="spill" cx="96" cy="180" r="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c8173a" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#c8173a" stop-opacity="0"/>
+    </radialGradient>
     <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#ffffff" stop-opacity="0"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
     </linearGradient>
     <mask id="gridMask">
-      <rect width="1280" height="320" fill="url(#fade)"/>
+      <rect width="1280" height="360" fill="url(#fade)"/>
     </mask>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
     </pattern>
   </defs>
 
-  <rect width="1280" height="320" fill="#0b0b0d"/>
-  <rect width="1280" height="320" fill="url(#glow)"/>
-  <rect width="1280" height="320" fill="url(#grid)" mask="url(#gridMask)"/>
+  <rect width="1280" height="360" fill="#0b0b0d"/>
+  <rect width="1280" height="360" fill="url(#glow)"/>
+  <rect width="1280" height="360" fill="url(#spill)"/>
+  <rect width="1280" height="360" fill="url(#grid)" mask="url(#gridMask)"/>
 
-  <!-- Table rows: a quiet data motif on the right -->
-  <g fill="#ffffff" fill-opacity="0.07">
-    <rect x="860" y="96" width="280" height="10" rx="2"/>
-    <rect x="860" y="124" width="220" height="10" rx="2"/>
-    <rect x="860" y="152" width="250" height="10" rx="2"/>
-    <rect x="860" y="208" width="190" height="10" rx="2"/>
-    <rect x="860" y="236" width="235" height="10" rx="2"/>
+  <!-- Corner marks -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5">
+    <path d="M24 44V24H44"/>
+    <path d="M1236 24H1256V44"/>
+    <path d="M24 316V336H44"/>
+    <path d="M1236 336H1256V316"/>
   </g>
-  <rect x="860" y="180" width="300" height="10" rx="2" fill="#d42a4a" fill-opacity="0.85"/>
-  <rect x="836" y="180" width="10" height="10" rx="2" fill="#d42a4a"/>
+
+  <!-- Review table: header, rows, one row lit -->
+  <g transform="translate(800 78)">
+    <rect width="400" height="204" rx="12" fill="#121215" fill-opacity="0.85" stroke="#ffffff" stroke-opacity="0.08"/>
+    <g fill="#ffffff" fill-opacity="0.3" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="11" letter-spacing="2">
+      <text x="24" y="32">STATEMENT</text>
+      <text x="236" y="32">RISK</text>
+      <text x="310" y="32">CONF.</text>
+    </g>
+    <rect x="24" y="44" width="352" height="1" fill="#ffffff" fill-opacity="0.08"/>
+    <g fill="#ffffff" fill-opacity="0.08">
+      <rect x="24" y="62" width="170" height="8" rx="2"/><rect x="236" y="62" width="44" height="8" rx="2"/><rect x="310" y="62" width="52" height="8" rx="2"/>
+      <rect x="24" y="90" width="140" height="8" rx="2"/><rect x="236" y="90" width="36" height="8" rx="2"/><rect x="310" y="90" width="44" height="8" rx="2"/>
+      <rect x="24" y="146" width="182" height="8" rx="2"/><rect x="236" y="146" width="40" height="8" rx="2"/><rect x="310" y="146" width="48" height="8" rx="2"/>
+      <rect x="24" y="174" width="120" height="8" rx="2"/><rect x="236" y="174" width="44" height="8" rx="2"/><rect x="310" y="174" width="40" height="8" rx="2"/>
+    </g>
+    <rect x="12" y="108" width="376" height="28" rx="6" fill="#d42a4a" fill-opacity="0.12"/>
+    <rect x="12" y="108" width="3" height="28" fill="#d42a4a"/>
+    <rect x="24" y="118" width="196" height="8" rx="2" fill="#d42a4a" fill-opacity="0.9"/>
+    <rect x="236" y="116" width="56" height="12" rx="6" fill="#d42a4a"/>
+    <rect x="310" y="118" width="48" height="8" rx="2" fill="#ffffff" fill-opacity="0.35"/>
+  </g>
 
   <!-- One red light -->
-  <rect x="80" y="104" width="4" height="112" fill="#d42a4a"/>
+  <rect x="80" y="100" width="4" height="160" fill="#d42a4a"/>
 
   <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
-    <text x="112" y="132" fill="#d42a4a" font-size="18" font-weight="600" letter-spacing="5">DATABASE ENGINEERING</text>
-    <text x="110" y="190" fill="#f5f5f4" font-size="60" font-weight="700" letter-spacing="-1">Israel Adeleye</text>
-    <text x="112" y="230" fill="#a8a29e" font-size="24" letter-spacing="0.5">Cloud Database Engineer · SQL safety tooling</text>
+    <text x="112" y="128" fill="#d42a4a" font-size="18" font-weight="600" letter-spacing="5">DATABASE ENGINEERING</text>
+    <text x="108" y="200" fill="#f5f5f4" font-size="76" font-weight="700" letter-spacing="-1.5">Israel Adeleye</text>
+    <text x="112" y="240" fill="#b8b2ad" font-size="28">Cloud Database Engineer · SQL safety tooling</text>
   </g>
+  <text x="112" y="270" fill="#ffffff" fill-opacity="0.38" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="16" letter-spacing="1">MySQL · PostgreSQL · SQL Server</text>
 </svg>
