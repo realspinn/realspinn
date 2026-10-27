@@ -1,18 +1,19 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Israel Adeleye. Database engineering. Cloud Database Engineer · SQL safety tooling.">
+  <img src="assets/hero.svg" width="100%" alt="Israel Adeleye. Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.">
 </p>
 
 <h1 align="center">Israel Adeleye</h1>
 
 <p align="center">
-  <strong>Cloud Database Engineer</strong><br>
-  MySQL · PostgreSQL · SQL Server · AWS · Google Cloud
+  <strong>Cloud Database Engineer</strong> · building SQL safety tooling<br>
+  <sub>MySQL · PostgreSQL · SQL Server · AWS · Google Cloud</sub>
 </p>
 
 <p align="center">
-  <a href="#featured-work">Featured work</a> ·
-  <a href="#now">Now</a> ·
-  <a href="#toolkit">Toolkit</a> ·
+  <a href="#about-me">About me</a> ·
+  <a href="#tech-stack">Tech stack</a> ·
+  <a href="#featured-projects">Featured projects</a> ·
+  <a href="#currently-focused-on">Currently focused on</a> ·
   <a href="#connect">Connect</a>
 </p>
 
@@ -26,17 +27,58 @@ I design production-grade databases, optimize performance bottlenecks, and deplo
 
 <br>
 
-## Featured work
+## Tech stack
+
+**Databases**
+
+<p>
+  <img src="assets/stack/mysql.svg" height="36" alt="MySQL">
+  <img src="assets/stack/postgresql.svg" height="36" alt="PostgreSQL">
+  <img src="assets/stack/sql-server.svg" height="36" alt="Microsoft SQL Server">
+  <img src="assets/stack/mongodb.svg" height="36" alt="MongoDB">
+</p>
+
+**Languages and data**
+
+<p>
+  <img src="assets/stack/python.svg" height="36" alt="Python">
+  <img src="assets/stack/pandas.svg" height="36" alt="pandas">
+  <img src="assets/stack/fastapi.svg" height="36" alt="FastAPI">
+  <img src="assets/stack/bash.svg" height="36" alt="Bash">
+</p>
+
+**Cloud and tools**
+
+<p>
+  <img src="assets/stack/aws.svg" height="36" alt="AWS">
+  <img src="assets/stack/google-cloud.svg" height="36" alt="Google Cloud">
+  <img src="assets/stack/linux.svg" height="36" alt="Linux">
+  <img src="assets/stack/git.svg" height="36" alt="Git">
+  <img src="assets/stack/github.svg" height="36" alt="GitHub">
+  <img src="assets/stack/gitee.svg" height="36" alt="Gitee">
+</p>
+
+<sub>The tools I work with. The stack used in each project is listed with the project below.</sub>
+
+<br>
+
+## Featured projects
+
+<table>
+<tr>
+<td>
 
 ### [MySQL DBA Validator](https://github.com/realspinn/mysql-dba-validator)
 
-> *How risky is this SQL, and how sure are we about that?*
+*How risky is this SQL, and how sure are we about that?*
+
+<img src="assets/stack/python.svg" height="28" alt="Python">
+<img src="assets/stack/fastapi.svg" height="28" alt="FastAPI">
+<img src="assets/stack/mysql.svg" height="28" alt="MySQL">
 
 A tool for reviewing MySQL SQL from database tickets before it is run. For each statement it gives a risk level and score, a confidence level, the findings behind the score and a review checklist. It can add read-only evidence from a database (execution plans and table metadata), and it never runs the SQL you submit. Scoring is rule-based and deterministic: no AI model makes the risk decision.
 
-Why it matters: a DBA gets a review that says what it knows, and what it does not, before the SQL reaches a real database.
-
-Python · FastAPI · sqlglot · a portable Windows app and an unsigned macOS (Apple Silicon) build
+**Worth a look:** a DBA gets a review that says what it knows, and what it does not, before the SQL reaches a real database. It ships as a portable Windows app and an unsigned macOS (Apple Silicon) build.
 
 [Repository](https://github.com/realspinn/mysql-dba-validator) ·
 [Latest release](https://github.com/realspinn/mysql-dba-validator/releases/latest) ·
@@ -48,38 +90,67 @@ Python · FastAPI · sqlglot · a portable Windows app and an unsigned macOS (Ap
 <img src="https://github.com/realspinn/mysql-dba-validator/raw/main/docs/images/validator-batch-review.png" width="100%" alt="Screenshot of MySQL DBA Validator results for a batch of four made-up statements: overall risk CRITICAL, score 100 of 100, with the top finding (a DELETE with no WHERE clause) and a table of each statement's risk, confidence and key finding.">
 </details>
 
-### Database projects
+</td>
+</tr>
+</table>
 
-- **[SQL Data Warehouse](https://github.com/realspinn/sql-data-warehouse-project)** · SQL Server<br>
-  A warehouse built from raw ERP and CRM files using the Medallion architecture (bronze, silver, gold), with ETL load procedures and a star schema for analytics.
-- **[BankDB](https://github.com/realspinn/BankDB-SQL-Project)** · PostgreSQL<br>
-  A normalised banking schema for customers, accounts, transactions and loans, with stored procedures, indexing and analysis queries.
-- **[NetflixDB](https://github.com/realspinn/NetflixDB-SQL)** · SQL Server<br>
-  A streaming-subscription database for users, plans and watch history, with constraints, stored procedures, window functions and CTEs.
+<table>
+<tr>
+<td>
 
-[All repositories →](https://github.com/realspinn?tab=repositories)
+#### [SQL Data Warehouse](https://github.com/realspinn/sql-data-warehouse-project)
 
-<br>
+<img src="assets/stack/sql-server.svg" height="28" alt="Microsoft SQL Server">
 
-## Now
+A warehouse built from raw ERP and CRM files using the Medallion architecture (bronze, silver, gold), with ETL load procedures and a star schema for analytics.
+
+**Worth a look:** the [load procedures](https://github.com/realspinn/sql-data-warehouse-project/tree/main/scripts) for each layer and the [data quality checks](https://github.com/realspinn/sql-data-warehouse-project/tree/main/tests).
+
+</td>
+</tr>
+<tr>
+<td>
+
+#### [BankDB](https://github.com/realspinn/BankDB-SQL-Project)
+
+<img src="assets/stack/postgresql.svg" height="28" alt="PostgreSQL">
+
+A normalised banking schema for customers, accounts, transactions and loans, with stored procedures, indexing and analysis queries.
+
+**Worth a look:** the [indexing script](https://github.com/realspinn/BankDB-SQL-Project/blob/main/BankDB_indexes.sql) next to the [analysis queries](https://github.com/realspinn/BankDB-SQL-Project/blob/main/BankDB_queries.sql) it supports.
+
+</td>
+</tr>
+<tr>
+<td>
+
+#### [NetflixDB](https://github.com/realspinn/NetflixDB-SQL)
+
+<img src="assets/stack/sql-server.svg" height="28" alt="Microsoft SQL Server">
+
+A streaming-subscription database for users, plans and watch history, with constraints, stored procedures, window functions and CTEs.
+
+**Worth a look:** the [stored procedures](https://github.com/realspinn/NetflixDB-SQL/blob/main/StoredProcedures/Netflix_StoredProcedures.sql) and the [window function and join queries](https://github.com/realspinn/NetflixDB-SQL/blob/main/sql/WindowFunctionsAndJoins.sql).
+
+</td>
+</tr>
+</table>
+
+<p align="right"><a href="https://github.com/realspinn?tab=repositories">All repositories →</a></p>
+
+## Currently focused on
 
 - **MySQL DBA Validator** is pre-1.0 and developed in the open. Contributions and feedback from DBAs are welcome: see the [contributing guide](https://github.com/realspinn/mysql-dba-validator/blob/main/CONTRIBUTING.md) or start a conversation in [the project's Discussions](https://github.com/realspinn/mysql-dba-validator/discussions).
 - **Keel** is an early-stage concept for chronic-care and medication management. It is not public yet.
 
 <br>
 
-## Toolkit
-
-- **Databases:** MySQL · PostgreSQL · SQL Server · MongoDB
-- **Languages:** SQL (T-SQL) · Python (pandas) · Bash
-- **Cloud and platforms:** AWS · Google Cloud · Linux · GitHub · Gitee
-
-<br>
-
 ## Connect
 
-Email: [adeleyeisrael400@gmail.com](mailto:adeleyeisrael400@gmail.com)
-
+<p>
+  <a href="https://www.linkedin.com/in/iao-adeleye/"><img src="assets/stack/linkedin.svg" height="36" alt="LinkedIn: iao-adeleye"></a>
+  <a href="mailto:adeleyeisrael400@gmail.com"><img src="assets/stack/email.svg" height="36" alt="Email: adeleyeisrael400@gmail.com"></a>
+</p>
 <br>
 
-<p align="center"><em>"Stay consistent. Success will chase you."</em> - IAO</p>
+<p align="center"><em>"Stay consistent. Success will chase you."</em> — IAO</p>
