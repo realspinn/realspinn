@@ -13,6 +13,7 @@
   <a href="#about-me">About me</a> ·
   <a href="#tech-stack">Tech stack</a> ·
   <a href="#featured-projects">Featured projects</a> ·
+  <a href="#github-activity">GitHub activity</a> ·
   <a href="#currently-focused-on">Currently focused on</a> ·
   <a href="#connect">Connect</a>
 </p>
@@ -137,6 +138,17 @@ A streaming-subscription database for users, plans and watch history, with const
 </table>
 
 <p align="right"><a href="https://github.com/realspinn?tab=repositories">All repositories →</a></p>
+
+## GitHub activity
+
+<p>
+  <a href="https://github.com/anuraghazra/github-readme-stats"><img height="190" src="https://github-readme-stats.vercel.app/api?username=realspinn&amp;show_icons=true&amp;hide_rank=true&amp;hide=contribs&amp;show=reviews,prs_merged&amp;custom_title=Public%20GitHub%20activity&amp;card_width=420&amp;bg_color=141417&amp;border_color=2c2c31&amp;title_color=e2455f&amp;text_color=e7e5e4&amp;icon_color=d42a4a&amp;border_radius=12&amp;disable_animations=true&amp;cache_seconds=21600" alt="Public GitHub activity card: total stars earned, commits in the last year, pull requests opened, pull requests merged, pull requests reviewed and issues opened, counted from public activity by github-readme-stats."></a>
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img height="190" src="https://streak-stats.demolab.com/?user=realspinn&amp;background=141417&amp;border=2c2c31&amp;stroke=2c2c31&amp;ring=d42a4a&amp;fire=d42a4a&amp;currStreakNum=f5f5f4&amp;sideNums=f5f5f4&amp;currStreakLabel=e2455f&amp;sideLabels=e7e5e4&amp;dates=a8a29e&amp;border_radius=12&amp;disable_animations=true" alt="Contribution streak card: total contributions since joining GitHub, the current daily streak and the longest streak, taken from the GitHub contribution calendar."></a>
+</p>
+
+<sub>Live cards from <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a> and <a href="https://github.com/DenverCoder1/github-readme-streak-stats">GitHub Readme Streak Stats</a>, refreshed every few hours. The activity card counts public activity only; the streak card follows the contribution calendar further down this page. Neither is an official GitHub score.</sub>
+
+<br>
 
 ## Currently focused on
 
