@@ -5,7 +5,7 @@
 <h1 align="center">Israel Adeleye</h1>
 
 <p align="center">
-  <strong>Cloud Database Engineer</strong>
+  <strong>Cloud Database Engineer</strong> <br>
   <sub>MySQL · PostgreSQL · SQL Server · AWS · Google Cloud</sub>
 </p>
 
