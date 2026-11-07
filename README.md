@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 700px)" srcset="assets/hero-mobile.svg">
-    <img src="assets/hero.svg" width="100%" alt="Israel Adeleye. Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.">
+    <source media="(max-width: 700px)" srcset="assets/hero-mobile.svg?v=2">
+    <img src="assets/hero.svg?v=2" width="100%" alt="Israel Adeleye. Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.">
   </picture>
 </p>
 
