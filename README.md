@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Israel Adeleye. Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.">
+  <picture>
+    <source media="(max-width: 700px)" srcset="assets/hero-mobile.svg">
+    <img src="assets/hero.svg" width="100%" alt="Israel Adeleye. Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.">
+  </picture>
 </p>
 
 <h1 align="center">Israel Adeleye</h1>
@@ -142,7 +145,7 @@ A streaming-subscription database for users, plans and watch history, with const
 ## GitHub activity
 
 <p>
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img height="190" src="https://github-readme-stats.vercel.app/api?username=realspinn&amp;show_icons=true&amp;hide_rank=true&amp;hide=contribs&amp;show=reviews,prs_merged&amp;custom_title=Public%20GitHub%20activity&amp;card_width=420&amp;bg_color=141417&amp;border_color=2c2c31&amp;title_color=e2455f&amp;text_color=e7e5e4&amp;icon_color=d42a4a&amp;border_radius=12&amp;disable_animations=true&amp;cache_seconds=21600" alt="Public GitHub activity card: total stars earned, commits in the last year, pull requests opened, pull requests merged, pull requests reviewed and issues opened, counted from public activity by github-readme-stats."></a>
+  <a href="https://github.com/stats-organization/github-readme-stats-action"><img height="190" src="profile/stats.svg" alt="Public GitHub activity card with GitHub grade: total stars earned, commits in the last year, pull requests opened, pull requests merged, pull requests reviewed and issues opened, counted from public activity and refreshed daily by a GitHub Action."></a>
   <a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img height="190" src="https://streak-stats.demolab.com/?user=realspinn&amp;background=141417&amp;border=2c2c31&amp;stroke=2c2c31&amp;ring=d42a4a&amp;fire=d42a4a&amp;currStreakNum=f5f5f4&amp;sideNums=f5f5f4&amp;currStreakLabel=e2455f&amp;sideLabels=e7e5e4&amp;dates=a8a29e&amp;border_radius=12&amp;disable_animations=true" alt="Contribution streak card: total contributions since joining GitHub, the current daily streak and the longest streak, taken from the GitHub contribution calendar."></a>
 </p>
 
