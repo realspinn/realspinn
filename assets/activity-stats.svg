@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="436" height="216" viewBox="0 0 436 216" role="img" aria-labelledby="title desc">
+  <title id="title">Public GitHub activity</title>
+  <desc id="desc">Public GitHub activity, grade B-: 8 stars earned, 175 commits in the last year, 43 pull requests opened, 41 merged, 3 pull requests reviewed in the last year, 9 issues opened.</desc>
+  <style>
+@keyframes orbit { from { stroke-dashoffset: 1216.0 } to { stroke-dashoffset: 0 } }
+@keyframes breathe { 0%, 100% { opacity: .45 } 50% { opacity: 1 } }
+@keyframes sweep { 0% { transform: translateX(-180px) } 40%, 100% { transform: translateX(640px) } }
+@keyframes rise { from { opacity: 0; transform: translateY(8px) } }
+@keyframes ping { from { transform: scale(1); opacity: .9 } to { transform: scale(2.8); opacity: 0 } }
+@keyframes flicker { 0%, 100% { transform: scale(1, 1) } 30% { transform: scale(.94, 1.08) }
+  55% { transform: scale(1.04, .96) } 80% { transform: scale(.97, 1.05) } }
+@keyframes draw { from { stroke-dasharray: 0 0.0 } }
+@keyframes pulse { 0%, 100% { opacity: .55 } 50% { opacity: 1 } }
+.comet { animation: orbit 7s linear infinite }
+.comet.late { animation-delay: -3.5s }
+.breathe { animation: breathe 4.5s ease-in-out infinite }
+.sweep { animation: sweep 7s ease-in-out 1.2s infinite both }
+.rise { animation: rise .8s cubic-bezier(.2, .7, .2, 1) both }
+.ping { transform-box: fill-box; transform-origin: center; animation: ping 1.8s ease-out infinite }
+.flame { transform-box: fill-box; transform-origin: 50% 100%; animation: flicker 1.4s ease-in-out infinite }
+.draw { animation: draw 1.6s cubic-bezier(.3, .7, .2, 1) .4s both }
+.pulse { animation: pulse 3s ease-in-out infinite }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important }
+  .comet, .sweep, .ping { display: none }
+}
+</style>
+  <defs>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.6" result="blur"/>
+      <feFlood flood-color="#ff3b5c" flood-opacity=".95"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="halo" x="-10%" y="-20%" width="120%" height="140%">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+    <filter id="spark" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d0b12"/>
+      <stop offset=".45" stop-color="#131316"/>
+      <stop offset="1" stop-color="#141417"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx="88%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#ff3b5c" stop-opacity=".38"/>
+      <stop offset=".5" stop-color="#7a0d24" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#7a0d24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shine" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff3b5c"/>
+      <stop offset=".55" stop-color="#ff7a45"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+    <clipPath id="clip"><rect x="8" y="8" width="420" height="200" rx="14"/></clipPath>
+  </defs>
+
+  <path class="breathe" d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" fill="none" stroke="#ff3b5c" stroke-width="4" opacity=".7" filter="url(#halo)"/>
+  <rect x="8" y="8" width="420" height="200" rx="14" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+    <rect class="breathe" x="8" y="8" width="420" height="200" fill="url(#bloom)"/>
+    <g transform="skewX(-20)"><rect class="sweep" x="0" y="8" width="120" height="200" fill="url(#shine)"/></g>
+    <g transform="translate(8 8)">
+      <text x="22" y="38" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#ff5c77" filter="url(#neon)">Public GitHub activity</text>
+      <g class="rise" style="animation-delay:.9s"><rect x="318" y="17" width="80" height="26" rx="13" fill="#ff3b5c" fill-opacity=".12" stroke="#ff3b5c" stroke-opacity=".6"/><circle cx="332" cy="30" r="3.5" fill="#ff3b5c" filter="url(#spark)"/><circle class="ping" cx="332" cy="30" r="3.5" fill="none" stroke="#ff3b5c" stroke-width="1.5"/><text x="342" y="34.5" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#b5aeaa">GRADE</text><text x="389" y="35" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff" filter="url(#neon)">B-</text></g>
+      <g transform="translate(22 56)"><g class="rise" style="animation-delay:0.15s"><rect width="120" height="60" rx="9" fill="#fff" fill-opacity=".035" stroke="#ff3b5c" stroke-opacity=".25"/><text x="12" y="22" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" letter-spacing=".4" fill="#b5aeaa">STARS EARNED</text><text x="12" y="48" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff" filter="url(#neon)">8</text></g></g>
+      <g transform="translate(150 56)"><g class="rise" style="animation-delay:0.27s"><rect width="120" height="60" rx="9" fill="#fff" fill-opacity=".035" stroke="#ff3b5c" stroke-opacity=".25"/><text x="12" y="22" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" letter-spacing=".4" fill="#b5aeaa">COMMITS · 1Y</text><text x="12" y="48" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff" filter="url(#neon)">175</text></g></g>
+      <g transform="translate(278 56)"><g class="rise" style="animation-delay:0.39s"><rect width="120" height="60" rx="9" fill="#fff" fill-opacity=".035" stroke="#ff3b5c" stroke-opacity=".25"/><text x="12" y="22" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" letter-spacing=".4" fill="#b5aeaa">PRS OPENED</text><text x="12" y="48" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff" filter="url(#neon)">43</text></g></g>
+      <g transform="translate(22 124)"><g class="rise" style="animation-delay:0.51s"><rect width="120" height="60" rx="9" fill="#fff" fill-opacity=".035" stroke="#ff3b5c" stroke-opacity=".25"/><text x="12" y="22" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" letter-spacing=".4" fill="#b5aeaa">PRS MERGED</text><text x="12" y="48" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff" filter="url(#neon)">41</text></g></g>
+      <g transform="translate(150 124)"><g class="rise" style="animation-delay:0.63s"><rect width="120" height="60" rx="9" fill="#fff" fill-opacity=".035" stroke="#ff3b5c" stroke-opacity=".25"/><text x="12" y="22" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" letter-spacing=".4" fill="#b5aeaa">REVIEWS · 1Y</text><text x="12" y="48" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff" filter="url(#neon)">3</text></g></g>
+      <g transform="translate(278 124)"><g class="rise" style="animation-delay:0.75s"><rect width="120" height="60" rx="9" fill="#fff" fill-opacity=".035" stroke="#ff3b5c" stroke-opacity=".25"/><text x="12" y="22" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" letter-spacing=".4" fill="#b5aeaa">ISSUES OPENED</text><text x="12" y="48" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#fff" filter="url(#neon)">9</text></g></g>
+    </g>
+  </g>
+  <path d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" fill="none" stroke="#ff3b5c" stroke-opacity=".5" stroke-width="1"/>
+  <g fill="none" stroke-linecap="round" stroke-dasharray="97.3 1118.7">
+    <path class="comet" d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" stroke="#ff3b5c" stroke-width="4" filter="url(#spark)"/>
+    <path class="comet" d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" stroke="#ffe1e7" stroke-width="1.4"/>
+    <path class="comet late" d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" stroke="#ff3b5c" stroke-width="3" opacity=".6" filter="url(#spark)"/>
+  </g>
+</svg>

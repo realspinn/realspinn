@@ -1,0 +1,43 @@
+name: Activity cards
+
+# Rebuilds the animated GitHub activity cards in assets/ once a day and
+# commits them only when a number changed.
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/activity_cards.py
+      - .github/workflows/activity-cards.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity-cards
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Build cards
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/activity_cards.py "${{ github.repository_owner }}"
+
+      - name: Commit if changed
+        run: |
+          git add assets/activity-stats.svg assets/activity-streak.svg
+          if git diff --cached --quiet; then
+            echo "Cards unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh activity cards"
+          git push
