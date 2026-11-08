@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="436" height="216" viewBox="0 0 436 216" role="img" aria-labelledby="title desc">
+  <title id="title">Contribution streak</title>
+  <desc id="desc">Contribution streak: 569 total contributions (since Nov 5, 2021), current streak 2 days (Nov 7 – Nov 8), longest streak 16 days (Oct 21 – Nov 5).</desc>
+  <style>
+@keyframes orbit { from { stroke-dashoffset: 1216.0 } to { stroke-dashoffset: 0 } }
+@keyframes breathe { 0%, 100% { opacity: .45 } 50% { opacity: 1 } }
+@keyframes sweep { 0% { transform: translateX(-180px) } 40%, 100% { transform: translateX(640px) } }
+@keyframes rise { from { opacity: 0; transform: translateY(8px) } }
+@keyframes ping { from { transform: scale(1); opacity: .9 } to { transform: scale(2.8); opacity: 0 } }
+@keyframes flicker { 0%, 100% { transform: scale(1, 1) } 30% { transform: scale(.94, 1.08) }
+  55% { transform: scale(1.04, .96) } 80% { transform: scale(.97, 1.05) } }
+@keyframes draw { from { stroke-dasharray: 0 238.8 } }
+@keyframes pulse { 0%, 100% { opacity: .55 } 50% { opacity: 1 } }
+.comet { animation: orbit 7s linear infinite }
+.comet.late { animation-delay: -3.5s }
+.breathe { animation: breathe 4.5s ease-in-out infinite }
+.sweep { animation: sweep 7s ease-in-out 1.2s infinite both }
+.rise { animation: rise .8s cubic-bezier(.2, .7, .2, 1) both }
+.ping { transform-box: fill-box; transform-origin: center; animation: ping 1.8s ease-out infinite }
+.flame { transform-box: fill-box; transform-origin: 50% 100%; animation: flicker 1.4s ease-in-out infinite }
+.draw { animation: draw 1.6s cubic-bezier(.3, .7, .2, 1) .4s both }
+.pulse { animation: pulse 3s ease-in-out infinite }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important }
+  .comet, .sweep, .ping { display: none }
+}
+</style>
+  <defs>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.6" result="blur"/>
+      <feFlood flood-color="#ff3b5c" flood-opacity=".95"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="halo" x="-10%" y="-20%" width="120%" height="140%">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+    <filter id="spark" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d0b12"/>
+      <stop offset=".45" stop-color="#131316"/>
+      <stop offset="1" stop-color="#141417"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx="88%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#ff3b5c" stop-opacity=".38"/>
+      <stop offset=".5" stop-color="#7a0d24" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#7a0d24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shine" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff3b5c"/>
+      <stop offset=".55" stop-color="#ff7a45"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+    <clipPath id="clip"><rect x="8" y="8" width="420" height="200" rx="14"/></clipPath>
+  </defs>
+
+  <path class="breathe" d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" fill="none" stroke="#ff3b5c" stroke-width="4" opacity=".7" filter="url(#halo)"/>
+  <rect x="8" y="8" width="420" height="200" rx="14" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+    <rect class="breathe" x="8" y="8" width="420" height="200" fill="url(#bloom)"/>
+    <g transform="skewX(-20)"><rect class="sweep" x="0" y="8" width="120" height="200" fill="url(#shine)"/></g>
+    <g transform="translate(8 8)">
+      <g stroke="#ff3b5c" stroke-opacity=".22"><path d="M140 40V160M280 40V160"/></g>
+      <g class="rise" style="animation-delay:0.2s"><text x="70" y="92" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#fff" filter="url(#neon)">569</text><text x="70" y="122" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ff8a9e">Total contributions</text><text x="70" y="143" text-anchor="middle" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#a8a29e">Since Nov 5, 2021</text></g>
+      <g class="rise" style="animation-delay:0.45s"><text x="350" y="92" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#fff" filter="url(#neon)">16</text><text x="350" y="122" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ff8a9e">Longest streak</text><text x="350" y="143" text-anchor="middle" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#a8a29e">Oct 21 – Nov 5</text></g>
+      <circle cx="210" cy="82" r="38" fill="none" stroke="#ff3b5c" stroke-opacity=".14" stroke-width="5"/>
+      <circle class="draw" cx="210" cy="82" r="38" fill="none" stroke="#ff3b5c" stroke-width="5" stroke-linecap="round" stroke-dasharray="208.8 238.8" transform="rotate(-67.4 210 82)" filter="url(#neon)"/>
+      <circle class="pulse" cx="210" cy="82" r="38" fill="none" stroke="#ff3b5c" stroke-width="9" stroke-opacity=".35" stroke-dasharray="208.8 238.8" transform="rotate(-67.4 210 82)" filter="url(#halo)"/>
+      <g transform="translate(210 43)"><g class="flame" filter="url(#spark)"><path d="M0-14C5-8 10-3 10 3C10 10 5 14 0 14C-5 14-10 10-10 3C-10-2-6-5-4-10C-3-5-1-4 1-6C2-8 1-11 0-14Z" fill="url(#fire)"/><path d="M0-1C3 2 5 5 5 8C5 11 3 13 0 13C-3 13-5 11-5 8C-5 5-2 3 0-1Z" fill="#ffe08a"/></g></g>
+      <g class="rise" style="animation-delay:.3s"><text x="210" y="92" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="700" fill="#fff" filter="url(#neon)">2</text><text x="210" y="148" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#ff5c77" filter="url(#neon)">Current streak</text><text x="210" y="168" text-anchor="middle" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#a8a29e">Nov 7 – Nov 8</text></g>
+    </g>
+  </g>
+  <path d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" fill="none" stroke="#ff3b5c" stroke-opacity=".5" stroke-width="1"/>
+  <g fill="none" stroke-linecap="round" stroke-dasharray="97.3 1118.7">
+    <path class="comet" d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" stroke="#ff3b5c" stroke-width="4" filter="url(#spark)"/>
+    <path class="comet" d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" stroke="#ffe1e7" stroke-width="1.4"/>
+    <path class="comet late" d="M22 8H414A14 14 0 0 1 428 22V194A14 14 0 0 1 414 208H22A14 14 0 0 1 8 194V22A14 14 0 0 1 22 8Z" stroke="#ff3b5c" stroke-width="3" opacity=".6" filter="url(#spark)"/>
+  </g>
+</svg>
