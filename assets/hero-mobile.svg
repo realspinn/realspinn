@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Israel Adeleye</title>
+  <desc id="desc">Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.</desc>
+  <style>
+    .glow  { animation: breathe 5s ease-in-out infinite; }
+    .light { animation: pulse 2s ease-in-out infinite; }
+    .grid  { animation: drift 6s linear infinite; }
+    .scan  { animation: scan 6s ease-in-out infinite; }
+    .pill  { animation: risk 6s ease-in-out infinite; }
+    .shine { animation: shine 4.5s ease-in-out infinite; }
+    .pkt   { animation: flow 3s linear infinite; }
+    .pkt2  { animation-delay: -1s; }
+    .pkt3  { animation-delay: -2s; }
+    .ping  { animation: ping 1.8s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    .dot   { animation: rise 6s ease-in infinite; }
+    .d2 { animation-duration: 7s;   animation-delay: -1.5s; }
+    .d3 { animation-duration: 5.5s; animation-delay: -3s; }
+    .d4 { animation-duration: 8s;   animation-delay: -4.5s; }
+    .d5 { animation-duration: 6.5s; animation-delay: -2.2s; }
+    .type  { animation: type 6s steps(24, end) infinite backwards; transform-box: fill-box; transform-origin: left center; }
+    .t2 { animation-delay: 0.35s; }
+    .t3 { animation-delay: 0.7s; }
+    .prog  { animation: prog 6s linear infinite; transform-box: fill-box; transform-origin: left center; }
+    /* Each row types in, stays, then clears just before the next review. */
+    @keyframes type { 0% { transform: scaleX(0); } 16%, 92% { transform: scaleX(1); } 97%, 100% { transform: scaleX(0); } }
+    @keyframes prog { 0% { transform: scaleX(0); } 90% { transform: scaleX(1); opacity: 1; } 100% { transform: scaleX(1); opacity: 0; } }
+    @keyframes breathe { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+    @keyframes pulse   { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    @keyframes drift   { from { transform: translate(0, 0); } to { transform: translate(-40px, -40px); } }
+    /* A red band sweeps across the name, then rests off-screen. */
+    @keyframes shine   { 0% { transform: translateX(-200px); } 55%, 100% { transform: translateX(780px); } }
+    /* Packets run along the line between the text and the table. */
+    @keyframes flow {
+      0%   { transform: translateX(0);     opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { transform: translateX(636px); opacity: 0; }
+    }
+    @keyframes ping { 0% { transform: scale(1); opacity: 0.9; } 100% { transform: scale(3.2); opacity: 0; } }
+    @keyframes rise { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 0.9; } 100% { transform: translateY(-320px); opacity: 0; } }
+    /* The highlight walks down the three rows and pauses on each one. */
+    @keyframes scan {
+      0%, 25%   { transform: translateY(-38px); }
+      33%, 66%  { transform: translateY(0); }
+      75%, 100% { transform: translateY(38px); }
+    }
+    /* The RISK pill turns red only while the highlight sits on the risky row. */
+    @keyframes risk {
+      0%, 31%, 68%, 100% { fill: #ffffff; fill-opacity: 0.18; }
+      33%, 66%           { fill: #d42a4a; fill-opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .glow, .light, .grid, .scan, .pill, .shine, .pkt, .ping, .dot, .type, .prog { animation: none; }
+      .shine, .pkt, .ping, .dot { opacity: 0; }
+    }
+  </style>
+  <defs>
+    <radialGradient id="glow" cx="700" cy="600" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c8173a" stop-opacity="0.6"/>
+      <stop offset="0.45" stop-color="#7a0d24" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0b0b0d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.3" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e2455f" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff5a75" stop-opacity="1"/>
+      <stop offset="1" stop-color="#e2455f" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="pktGlow">
+      <stop offset="0" stop-color="#ff5a75" stop-opacity="1"/>
+      <stop offset="1" stop-color="#d42a4a" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridMask">
+      <rect width="800" height="560" fill="url(#fade)"/>
+    </mask>
+    <clipPath id="nameClip">
+      <text x="96" y="186" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="80" font-weight="700" letter-spacing="-1.5">Israel Adeleye</text>
+    </clipPath>
+    <clipPath id="r1"><rect class="type"    x="28" y="64"  width="616" height="32"/></clipPath>
+    <clipPath id="r2"><rect class="type t2" x="28" y="102" width="616" height="34"/></clipPath>
+    <clipPath id="r3"><rect class="type t3" x="28" y="140" width="616" height="32"/></clipPath>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="560" fill="#0b0b0d"/>
+  <rect class="glow" width="800" height="560" fill="url(#glow)"/>
+  <g mask="url(#gridMask)">
+    <rect class="grid" width="880" height="640" fill="url(#grid)"/>
+  </g>
+
+  <!-- Rising particles in the glow -->
+  <g fill="#ff5a75">
+    <circle class="dot"    cx="480" cy="560" r="2.5"/>
+    <circle class="dot d2" cx="560" cy="570" r="2"/>
+    <circle class="dot d3" cx="630" cy="555" r="3"/>
+    <circle class="dot d4" cx="700" cy="570" r="2"/>
+    <circle class="dot d5" cx="760" cy="560" r="2.5"/>
+  </g>
+
+  <!-- Corner marks -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2">
+    <path d="M28 52V28H52"/>
+    <path d="M748 28H772V52"/>
+    <path d="M28 508V532H52"/>
+    <path d="M748 532H772V508"/>
+  </g>
+
+  <!-- One red light -->
+  <rect class="light" x="64" y="72" width="6" height="216" fill="#d42a4a"/>
+
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="100" y="104" fill="#d42a4a" font-size="26" font-weight="600" letter-spacing="6">DATABASE ENGINEERING</text>
+    <text x="96" y="186" fill="#f5f5f4" font-size="80" font-weight="700" letter-spacing="-1.5">Israel Adeleye</text>
+    <text x="100" y="236" fill="#b8b2ad" font-size="34">Cloud Database Engineer</text>
+    <text x="100" y="280" fill="#b8b2ad" font-size="34">SQL safety tooling</text>
+  </g>
+  <!-- Shine sweeping across the name -->
+  <g clip-path="url(#nameClip)">
+    <rect class="shine" x="0" y="110" width="200" height="100" fill="url(#band)"/>
+  </g>
+
+  <!-- Data line with packets flowing along it -->
+  <path d="M100 306H736" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="2"/>
+  <circle class="pkt"      cx="100" cy="306" r="11" fill="url(#pktGlow)"/>
+  <circle class="pkt pkt2" cx="100" cy="306" r="11" fill="url(#pktGlow)"/>
+  <circle class="pkt pkt3" cx="100" cy="306" r="11" fill="url(#pktGlow)"/>
+
+  <!-- Compact review table: three rows and a scanning highlight -->
+  <g transform="translate(64 328)">
+    <rect width="672" height="190" rx="16" fill="#121215" fill-opacity="0.85" stroke="#ffffff" stroke-opacity="0.08"/>
+    <g fill="#ffffff" fill-opacity="0.35" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="18" letter-spacing="2">
+      <text x="32" y="42">STATEMENT</text>
+      <text x="400" y="42">RISK</text>
+      <text x="530" y="42">CONF.</text>
+    </g>
+    <!-- Live indicator -->
+    <circle class="ping" cx="636" cy="36" r="5" fill="#d42a4a"/>
+    <circle cx="636" cy="36" r="5" fill="#d42a4a"/>
+    <rect x="32" y="58" width="608" height="1" fill="#ffffff" fill-opacity="0.08"/>
+    <!-- Scanning highlight (behind the rows) -->
+    <g class="scan">
+      <rect x="16" y="98" width="640" height="40" rx="8" fill="#d42a4a" fill-opacity="0.12"/>
+      <rect x="16" y="98" width="4" height="40" fill="#d42a4a"/>
+    </g>
+    <!-- Rows: each one types itself in, one after another -->
+    <g font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="19">
+      <g clip-path="url(#r1)">
+        <text x="32" y="87" fill="#e7e5e4" fill-opacity="0.75">SELECT id FROM users</text>
+        <text x="400" y="87" fill="#8f8a86">LOW</text>
+        <text x="550" y="87" fill="#e7e5e4" fill-opacity="0.6">98%</text>
+      </g>
+      <g clip-path="url(#r2)">
+        <text x="32" y="125" fill="#ff5a75">DELETE FROM payments;</text>
+        <rect class="pill" x="400" y="106" width="118" height="25" rx="12.5" fill="#d42a4a"/>
+        <text x="459" y="124" fill="#ffffff" font-size="15" font-weight="700" letter-spacing="1" text-anchor="middle">CRITICAL</text>
+        <text x="550" y="125" fill="#e7e5e4" fill-opacity="0.85">99%</text>
+      </g>
+      <g clip-path="url(#r3)">
+        <text x="32" y="163" fill="#e7e5e4" fill-opacity="0.75">ALTER TABLE orders ADD</text>
+        <text x="400" y="163" fill="#e2455f">HIGH</text>
+        <text x="550" y="163" fill="#e7e5e4" fill-opacity="0.6">86%</text>
+      </g>
+    </g>
+    <!-- Review progress bar -->
+    <rect x="32" y="176" width="608" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.06"/>
+    <rect class="prog" x="32" y="176" width="608" height="3" rx="1.5" fill="#d42a4a"/>
+  </g>
+</svg>

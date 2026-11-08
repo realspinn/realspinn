@@ -49,6 +49,7 @@ STATS_QUERY = """
 query($login: String!, $prs: String!, $merged: String!, $issues: String!) {
   user(login: $login) {
     createdAt
+    followers { totalCount }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
       nodes { stargazerCount }
     }
@@ -100,6 +101,7 @@ def fetch(login):
         "reviews": public_total(cc["pullRequestReviewContributionsByRepository"]),
         "issues": data["issues"]["issueCount"],
     }
+    stats["grade"] = grade(stats, user["followers"]["totalCount"])
 
     # The calendar API returns at most one year per query.
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
@@ -115,6 +117,30 @@ def fetch(login):
                 if date <= now.date():
                     days[date] = day["contributionCount"]
     return stats, days, now.date()
+
+
+def grade(s, followers):
+    """The github-readme-stats grade: weighted percentiles against medians."""
+    def exp_cdf(x):
+        return 1 - 2 ** -x
+
+    def log_cdf(x):
+        return x / (1 + x)
+
+    score = (
+        2 * exp_cdf(s["commits"] / 250)
+        + 3 * exp_cdf(s["prs"] / 50)
+        + 1 * exp_cdf(s["issues"] / 25)
+        + 1 * exp_cdf(s["reviews"] / 2)
+        + 4 * log_cdf(s["stars"] / 50)
+        + 1 * log_cdf(followers / 10)
+    ) / 12
+    percentile = (1 - score) * 100
+    for limit, level in zip((1, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100),
+                            ("S", "A+", "A", "A-", "B+", "B", "B-", "C+", "C")):
+        if percentile <= limit:
+            return level
+    return "C"
 
 
 def streaks(days, today):
@@ -265,8 +291,12 @@ def stats_card(s):
     ]
     parts = [
         f'      <text x="22" y="38" font-family="{SANS}" font-size="17" font-weight="700" fill="#ff5c77" filter="url(#neon)">Public GitHub activity</text>',
-        '      <circle cx="396" cy="32" r="4" fill="#ff3b5c" filter="url(#spark)"/>',
-        '      <circle class="ping" cx="396" cy="32" r="4" fill="none" stroke="#ff3b5c" stroke-width="1.5"/>',
+        '      <g class="rise" style="animation-delay:.9s">'
+        '<rect x="318" y="17" width="80" height="26" rx="13" fill="#ff3b5c" fill-opacity=".12" stroke="#ff3b5c" stroke-opacity=".6"/>'
+        '<circle cx="332" cy="30" r="3.5" fill="#ff3b5c" filter="url(#spark)"/>'
+        '<circle class="ping" cx="332" cy="30" r="3.5" fill="none" stroke="#ff3b5c" stroke-width="1.5"/>'
+        f'<text x="342" y="34.5" font-family="{MONO}" font-size="10" fill="#b5aeaa">GRADE</text>'
+        f'<text x="389" y="35" text-anchor="end" font-family="{SANS}" font-size="14" font-weight="700" fill="#fff" filter="url(#neon)">{escape(s["grade"])}</text></g>',
     ]
     for i, (label, value) in enumerate(tiles):
         tx, ty = 22 + (i % 3) * 128, 56 + (i // 3) * 68
@@ -278,7 +308,7 @@ def stats_card(s):
             f"</g></g>"
         )
     desc = (
-        f"Public GitHub activity: {s['stars']:,} stars earned, {s['commits']:,} commits in the last year, "
+        f"Public GitHub activity, grade {s['grade']}: {s['stars']:,} stars earned, {s['commits']:,} commits in the last year, "
         f"{s['prs']:,} pull requests opened, {s['merged']:,} merged, {s['reviews']:,} pull requests reviewed "
         f"in the last year, {s['issues']:,} issues opened."
     )

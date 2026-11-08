@@ -1,11 +1,14 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Israel Adeleye. Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.">
+  <picture>
+    <source media="(max-width: 700px)" srcset="assets/hero-mobile.svg?v=2">
+    <img src="assets/hero.svg?v=2" width="100%" alt="Israel Adeleye. Database engineering. Cloud Database Engineer · SQL safety tooling. MySQL · PostgreSQL · SQL Server.">
+  </picture>
 </p>
 
 <h1 align="center">Israel Adeleye</h1>
 
 <p align="center">
-  <strong>Cloud Database Engineer</strong> · building SQL safety tooling<br>
+  <strong>Cloud Database Engineer</strong> <br>
   <sub>MySQL · PostgreSQL · SQL Server · AWS · Google Cloud</sub>
 </p>
 
@@ -142,11 +145,10 @@ A streaming-subscription database for users, plans and watch history, with const
 ## GitHub activity
 
 <p>
-  <img height="190" src="assets/activity-stats.svg" alt="Public GitHub activity card: total stars earned, commits in the last year, pull requests opened, pull requests merged, pull requests reviewed in the last year and issues opened, counted from public activity.">
-  <img height="190" src="assets/activity-streak.svg" alt="Contribution streak card: total contributions since the first one, the current daily streak and the longest streak, taken from the GitHub contribution calendar.">
+  <img height="190" src="assets/activity-stats.svg" alt="Public GitHub activity card with GitHub grade: total stars earned, commits in the last year, pull requests opened, pull requests merged, pull requests reviewed in the last year and issues opened, counted from public activity and refreshed daily by a GitHub Action.">
+  <img height="190" src="assets/activity-streak.svg" alt="Contribution streak card: total contributions since the first one, the current daily streak and the longest streak, taken from the GitHub contribution calendar and refreshed daily by a GitHub Action.">
 </p>
 
-<sub>Built from the GitHub API by <a href="scripts/activity_cards.py">a small script</a> and refreshed daily by a GitHub Action. The activity card counts public activity only; the streak card follows the contribution calendar further down this page. Neither is an official GitHub score.</sub>
 
 <br>
 
