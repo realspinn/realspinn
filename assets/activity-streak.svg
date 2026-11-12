@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="436" height="216" viewBox="0 0 436 216" role="img" aria-labelledby="title desc">
   <title id="title">Contribution streak</title>
-  <desc id="desc">Contribution streak: 619 total contributions (since Nov 5, 2021), current streak 5 days (Nov 7 – Nov 11), longest streak 16 days (Oct 21 – Nov 5).</desc>
+  <desc id="desc">Contribution streak: 624 total contributions (since Nov 5, 2021), current streak 5 days (Nov 7 – Nov 11), longest streak 16 days (Oct 21 – Nov 5).</desc>
   <style>
 @keyframes orbit { from { stroke-dashoffset: 1216.0 } to { stroke-dashoffset: 0 } }
 @keyframes breathe { 0%, 100% { opacity: .45 } 50% { opacity: 1 } }
@@ -69,7 +69,7 @@
     <g transform="skewX(-20)"><rect class="sweep" x="0" y="8" width="120" height="200" fill="url(#shine)"/></g>
     <g transform="translate(8 8)">
       <g stroke="#ff3b5c" stroke-opacity=".22"><path d="M140 40V160M280 40V160"/></g>
-      <g class="rise" style="animation-delay:0.2s"><text x="70" y="92" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#fff" filter="url(#neon)">619</text><text x="70" y="122" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ff8a9e">Total contributions</text><text x="70" y="143" text-anchor="middle" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#a8a29e">Since Nov 5, 2021</text></g>
+      <g class="rise" style="animation-delay:0.2s"><text x="70" y="92" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#fff" filter="url(#neon)">624</text><text x="70" y="122" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ff8a9e">Total contributions</text><text x="70" y="143" text-anchor="middle" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#a8a29e">Since Nov 5, 2021</text></g>
       <g class="rise" style="animation-delay:0.45s"><text x="350" y="92" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#fff" filter="url(#neon)">16</text><text x="350" y="122" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ff8a9e">Longest streak</text><text x="350" y="143" text-anchor="middle" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#a8a29e">Oct 21 – Nov 5</text></g>
       <circle cx="210" cy="82" r="38" fill="none" stroke="#ff3b5c" stroke-opacity=".14" stroke-width="5"/>
       <circle class="draw" cx="210" cy="82" r="38" fill="none" stroke="#ff3b5c" stroke-width="5" stroke-linecap="round" stroke-dasharray="208.8 238.8" transform="rotate(-67.4 210 82)" filter="url(#neon)"/>
